@@ -5,6 +5,11 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import {connect} from 'react-redux'
 import './header.styles.scss';
 
+import { selectCartHidden, selectCurrentUser } from '../../redux/user/user.selectors'
+
+
+import {createStructuredSelector} from 'reselect'
+
 import CartIcon from '../cart-icon/cart-icon.component'
 
 import CartDropdown  from '../cart-dropdown/cart-dropdown.component'
